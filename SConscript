@@ -8,6 +8,6 @@ CPPPATH = [cwd]
 
 src = Glob('*.cpp')
 
-group = group + DefineGroup('qmc5883', src, depend = ['PKG_USING_QMC5883L'], CPPPATH = CPPPATH)
+group = group + DefineGroup('qmc5883', src, depend = ['PKG_USING_ARDUINO_QMC5883L'], CPPPATH = CPPPATH)
 
 Return('group')
