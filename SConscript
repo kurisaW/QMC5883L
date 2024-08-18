@@ -6,7 +6,7 @@ src     = []
 group   = []
 CPPPATH = [cwd]
 
-src = Glob('*.cpp')
+src += Glob('*.cpp')
 
 group = group + DefineGroup('qmc5883', src, depend = ['PKG_USING_ARDUINO_QMC5883L'], CPPPATH = CPPPATH)
 
